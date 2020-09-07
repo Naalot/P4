@@ -1,6 +1,8 @@
 <?php
-//On inclut le fichier dont on a besoin (ici à la racine de notre site)
+//On inclut les fichiers dont on a besoin
 require 'Database.php';
+
+require 'Article.php';
 ?>
 
 <!doctype html>
@@ -22,17 +24,26 @@ require 'Database.php';
 
 <body>
   <div>
-    <h1>Mon blog</h1>
+  <h1>Mon blog</h1>
     <p>En construction</p>
-
     <?php
-
-    $db = new Database();
-    //On ajoute un echo pour vérifier qu'un message s'affiche à l'écran
-    echo $db->getConnection();
+    $article = new Article();
+    $articles = $article->getArticles();
+    while($article = $articles->fetch())
+    {
+        ?>
+        <div>
+            <h2><a href="single.php?articleId=<?= htmlspecialchars($article->id);?>"><?= htmlspecialchars($article->title);?></a></h2>
+            <p><?= htmlspecialchars($article->content);?></p>
+            <p><?= htmlspecialchars($article->author);?></p>
+            <p>Créé le : <?= htmlspecialchars($article->createdAt);?></p>
+        </div>
+        <br>
+        <?php
+    }
+    $articles->closeCursor();
     ?>
-
-  </div>
+</div>
 
 
   <!-- Optional JavaScript -->
