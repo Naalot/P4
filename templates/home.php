@@ -1,8 +1,10 @@
 <?php
 //On inclut les fichiers dont on a besoin
-require 'Database.php';
+require '../src/DAO/DAO.php';
+require '../src/DAO/ArticleDAO.php';
 
-require 'Article.php';
+use App\src\DAO\ArticleDAO;
+
 ?>
 
 <!doctype html>
@@ -27,7 +29,7 @@ require 'Article.php';
   <h1>Mon blog</h1>
     <p>En construction</p>
     <?php
-    $article = new Article();
+    $article = new \App\src\DAO\ArticleDAO();
     $articles = $article->getArticles();
     while($article = $articles->fetch())
     {
