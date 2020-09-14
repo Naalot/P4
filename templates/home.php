@@ -1,10 +1,7 @@
 <?php
-//On inclut les fichiers dont on a besoin
-require '../src/DAO/DAO.php';
-require '../src/DAO/ArticleDAO.php';
+require '../vendor/autoload.php';
 
 use App\src\DAO\ArticleDAO;
-
 ?>
 
 <!doctype html>
@@ -26,26 +23,25 @@ use App\src\DAO\ArticleDAO;
 
 <body>
   <div>
-  <h1>Mon blog</h1>
+    <h1>Mon blog</h1>
     <p>En construction</p>
     <?php
     $article = new \App\src\DAO\ArticleDAO();
     $articles = $article->getArticles();
-    while($article = $articles->fetch())
-    {
-        ?>
-        <div>
-            <h2><a href="single.php?articleId=<?= htmlspecialchars($article->id);?>"><?= htmlspecialchars($article->title);?></a></h2>
-            <p><?= htmlspecialchars($article->content);?></p>
-            <p><?= htmlspecialchars($article->author);?></p>
-            <p>Créé le : <?= htmlspecialchars($article->createdAt);?></p>
-        </div>
-        <br>
-        <?php
+    while ($article = $articles->fetch()) {
+    ?>
+      <div>
+        <h2><a href="single.php?articleId=<?= htmlspecialchars($article->id); ?>"><?= htmlspecialchars($article->title); ?></a></h2>
+        <p><?= htmlspecialchars($article->content); ?></p>
+        <p><?= htmlspecialchars($article->author); ?></p>
+        <p>Créé le : <?= htmlspecialchars($article->createdAt); ?></p>
+      </div>
+      <br>
+    <?php
     }
     $articles->closeCursor();
     ?>
-</div>
+  </div>
 
 
   <!-- Optional JavaScript -->
