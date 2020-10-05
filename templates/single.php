@@ -1,10 +1,3 @@
-<?php
-
-use App\src\DAO\ArticleDAO;
-use App\src\DAO\CommentDAO;
-
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -17,11 +10,11 @@ use App\src\DAO\CommentDAO;
     <div>
         <h1>Mon blog</h1>
         <p>En construction</p>
+
         <?php
-        $article = new \App\src\DAO\ArticleDAO();
-        $articles = $article->getArticle($_GET['articleId']);
-        $article = $articles->fetch()
-        ?>
+    $article = $articles->fetch()
+    ?>
+
         <div>
             <h2><?= htmlspecialchars($article->title); ?></h2>
             <p><?= htmlspecialchars($article->content); ?></p>
@@ -36,11 +29,12 @@ use App\src\DAO\CommentDAO;
 
         <div id="comments" class="text-left" style="margin-left: 50px">
             <h3>Commentaires</h3>
+
             <?php
-            $comment = new \App\src\DAO\CommentDAO();
-            $comments = $comment->getCommentsFromArticle($_GET['articleId']);
-            while ($comment = $comments->fetch()) {
+        while($comment = $comments->fetch())
+        {
             ?>
+            
                 <h4><?= htmlspecialchars($comment->pseudo); ?></h4>
                 <p><?= htmlspecialchars($comment->content); ?></p>
                 <p>Posté le <?= htmlspecialchars($comment->createdAt); ?></p>
