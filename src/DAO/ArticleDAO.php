@@ -23,7 +23,7 @@ class ArticleDAO extends DAO
         $sql = 'SELECT id, title, content, author, createdAt FROM article ORDER BY id DESC';
         $result = $this->createQuery($sql);
         $articles = [];
-        foreach ($result as $row){
+        foreach ($result as $row) {
             $articleId = $row['id'];
             $articles[$articleId] = $this->buildObject($row);
         }
@@ -44,5 +44,16 @@ class ArticleDAO extends DAO
     {
         $sql = 'INSERT INTO article (title, content, author, createdAt) VALUES (?, ?, ?, NOW())';
         $this->createQuery($sql, [$post->get('title'), $post->get('content'), $post->get('author')]);
+    }
+
+    public function editArticle(Parameter $post, $articleId)
+    {
+        $sql = 'UPDATE article SET title=:title, content=:content, author=:author WHERE id=:articleId';
+        $this->createQuery($sql, [
+            'title' => $post->get('title'),
+            'content' => $post->get('content'),
+            'author' => $post->get('author'),
+            'articleId' => $articleId
+        ]);
     }
 }
