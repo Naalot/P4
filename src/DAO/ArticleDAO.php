@@ -23,7 +23,7 @@ class ArticleDAO extends DAO
         $sql = 'SELECT id, title, content, author, createdAt FROM article ORDER BY id DESC';
         $result = $this->createQuery($sql);
         $articles = [];
-        foreach ($result as $row) {
+        foreach ($result as $row){
             $articleId = $row['id'];
             $articles[$articleId] = $this->buildObject($row);
         }
@@ -55,5 +55,13 @@ class ArticleDAO extends DAO
             'author' => $post->get('author'),
             'articleId' => $articleId
         ]);
+    }
+
+    public function deleteArticle($articleId)
+    {
+        $sql = 'DELETE FROM comment WHERE article_id = ?';
+        $this->createQuery($sql, [$articleId]);
+        $sql = 'DELETE FROM article WHERE id = ?';
+        $this->createQuery($sql, [$articleId]);
     }
 }
