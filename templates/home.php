@@ -29,6 +29,7 @@ if ($this->session->get('pseudo')) {
 <?php
 }
 ?>
+
 <?php
 foreach ($articles as $article) {
 ?>
