@@ -10,4 +10,4 @@
     </form>
 </div>
 <br>
-<a href="../public/index.php">Retour à l'accueil</a>
+<a class="btn btn-primary" href="../public/index.php">Retour à l'accueil</a>

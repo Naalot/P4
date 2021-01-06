@@ -12,14 +12,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
 
+    <script src="https://cdn.tiny.cloud/1/mbkz2iix5nw6qqgj6bujfzj8etreltwnck4cldq3f09k5ib5/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
     <title><?= $title ?></title>
 </head>
 
 <body>
     
-    <div id="content">
+    <?php include ("navbar.php"); ?>
+
+    <main>
         <?= $content ?>
-    </div>
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

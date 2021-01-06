@@ -9,15 +9,15 @@
 <?= $this->session->show('delete_comment'); ?>
 <?= $this->session->show('delete_user'); ?>
 <h2>Articles</h2>
-<a href="../public/index.php?route=addArticle">Nouvel article</a>
-<table>
+<a class="btn btn-success" href="../public/index.php?route=addArticle">Nouvel article</a>
+<table class="table table-hover table-sucess table-striped">
     <tr>
-        <td>Id</td>
-        <td>Titre</td>
-        <td>Contenu</td>
-        <td>Auteur</td>
-        <td>Date</td>
-        <td>Actions</td>
+        <th>Id</th>
+        <th>Titre</th>
+        <th>Contenu</th>
+        <th>Auteur</th>
+        <th>Date</th>
+        <th>Actions</th>
     </tr>
     <?php
     foreach ($articles as $article)
@@ -26,12 +26,12 @@
         <tr>
             <td><?= htmlspecialchars($article->getId());?></td>
             <td><a href="../public/index.php?route=article&articleId=<?= htmlspecialchars($article->getId());?>"><?= htmlspecialchars($article->getTitle());?></a></td>
-            <td><?= substr(htmlspecialchars($article->getContent()), 0, 150);?></td>
+            <td><?= substr($article->getContent(), 0, 150);?></td>
             <td><?= htmlspecialchars($article->getAuthor());?></td>
             <td>Créé le : <?= htmlspecialchars($article->getCreatedAt());?></td>
             <td>
-                <a href="../public/index.php?route=editArticle&articleId=<?= $article->getId(); ?>">Modifier</a>
-                <a href="../public/index.php?route=deleteArticle&articleId=<?= $article->getId(); ?>">Supprimer</a>
+                <a class="btn btn-warning" href="../public/index.php?route=editArticle&articleId=<?= $article->getId(); ?>">Modifier</a>
+                <a class="btn btn-danger" href="../public/index.php?route=deleteArticle&articleId=<?= $article->getId(); ?>">Supprimer</a>
             </td>
         </tr>
         <?php
@@ -40,13 +40,13 @@
 </table>
 
 <h2>Commentaires signalés</h2>
-<table>
+<table class="table table-hover table-sucess table-striped">
     <tr>
-        <td>Id</td>
-        <td>Pseudo</td>
-        <td>Message</td>
-        <td>Date</td>
-        <td>Actions</td>
+        <th>Id</th>
+        <th>Pseudo</th>
+        <th>Message</th>
+        <th>Date</th>
+        <th>Actions</th>
     </tr>
     <?php
     foreach ($comments as $comment)
@@ -58,8 +58,8 @@
             <td><?= substr(htmlspecialchars($comment->getContent()), 0, 150);?></td>
             <td>Créé le : <?= htmlspecialchars($comment->getCreatedAt());?></td>
             <td>
-                <a href="../public/index.php?route=unflagComment&commentId=<?= $comment->getId(); ?>">Désignaler le commentaire</a>
-                <a href="../public/index.php?route=deleteComment&commentId=<?= $comment->getId(); ?>">Supprimer le commentaire</a>
+                <a class="btn btn-secondary" href="../public/index.php?route=unflagComment&commentId=<?= $comment->getId(); ?>">Désignaler le commentaire</a>
+                <a class="btn btn-danger" href="../public/index.php?route=deleteComment&commentId=<?= $comment->getId(); ?>">Supprimer le commentaire</a>
             </td>
         </tr>
         <?php
@@ -68,13 +68,13 @@
 </table>
 
 <h2>Utilisateurs</h2>
-<table>
+<table class="table table-hover table-sucess table-striped">
     <tr>
-        <td>Id</td>
-        <td>Pseudo</td>
-        <td>Date</td>
-        <td>Rôle</td>
-        <td>Actions</td>
+        <th>Id</th>
+        <th>Pseudo</th>
+        <th>Date</th>
+        <th>Rôle</th>
+        <th>Actions</th>
     </tr>
     <?php
     foreach ($users as $user)
@@ -89,7 +89,7 @@
                 <?php
                 if($user->getRole() != 'admin') {
                 ?>
-                <a href="../public/index.php?route=deleteUser&userId=<?= $user->getId(); ?>">Supprimer</a>
+                <a class="btn btn-danger" href="../public/index.php?route=deleteUser&userId=<?= $user->getId(); ?>">Supprimer</a>
                 <?php }
                 else {
                     ?>
@@ -103,3 +103,6 @@
     }
     ?>
 </table>
+<br>
+
+<a class="btn btn-primary" href="../public/index.php">Retour à l'accueil</a>
