@@ -11,5 +11,4 @@
         <?= isset($errors['password']) ? $errors['password'] : ''; ?>
         <input type="submit" value="Inscription" id="submit" name="submit">
     </form>
-    <a class="btn btn-primary" href="../public/index.php">Retour à l'accueil</a>
 </div>

@@ -1,4 +1,5 @@
 <?php $this->title = "Connexion"; ?>
+
 <h1>Mon blog</h1>
 <p>En construction</p>
 <?= $this->session->show('error_login'); ?>
@@ -10,5 +11,4 @@
         <input type="password" id="password" name="password"><br>
         <input type="submit" value="Connexion" id="submit" name="submit">
     </form>
-    <a class="btn btn-primary" href="../public/index.php">Retour à l'accueil</a>
 </div>

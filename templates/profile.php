@@ -8,5 +8,3 @@
     <a href="../public/index.php?route=updatePassword">Modifier son mot de passe</a>
     <a href="../public/index.php?route=deleteAccount">Supprimer mon compte</a>
 </div>
-<br>
-<a  class="btn btn-primary" href="../public/index.php">Retour à l'accueil</a>

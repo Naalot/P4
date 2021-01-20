@@ -1,0 +1,18 @@
+* {
+    font-family: sans-serif;
+}
+
+#headert {
+    background-image: url("../img/AlaskaBl.jpg");
+    background-size: cover;
+    height: 400px;
+    padding: 20px;
+}
+
+#logo img{
+    height: 50px;
+}
+
+.btn {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+}

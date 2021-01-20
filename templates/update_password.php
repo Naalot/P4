@@ -9,5 +9,3 @@
         <input type="submit" value="Mettre à jour" id="submit" name="submit">
     </form>
 </div>
-<br>
-<a class="btn btn-primary" href="../public/index.php">Retour à l'accueil</a>
