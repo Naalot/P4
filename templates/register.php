@@ -1,6 +1,5 @@
 <?php $this->title = "Inscription"; ?>
-<h1>Mon blog</h1>
-<p>En construction</p>
+
 <div>
     <form method="post" action="../public/index.php?route=register">
         <label for="pseudo">Pseudo</label><br>

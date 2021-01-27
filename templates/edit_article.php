@@ -1,7 +1,5 @@
 <?php $this->title = "Modifier l'article"; ?>
 
-<h1>Mon blog</h1>
-<p>En construction</p>
-<div>
+<div class="container shadow-sm p-3 mb-5 rounded">
     <?php include('form_article.php');?>
 </div>
