@@ -2,7 +2,12 @@
     font-family: sans-serif;
 }
 
+h2, h2 a {
+    color: darkslategray;
+}
+
 #headert {
+    color: darkslategray;
     background-image: url("../img/AlaskaBl.jpg");
     background-size: cover;
     height: 400px;

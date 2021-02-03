@@ -11,6 +11,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../public/index.php">Accueil</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
 
                     <?php
                     if ($this->session->get('pseudo')) {
@@ -48,5 +51,5 @@
             </div>
         </div>
     </nav>
-    
+
 </header>
