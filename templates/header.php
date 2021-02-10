@@ -13,6 +13,6 @@
 </div>
 
 <div class="container mx-auto d-block p-0 mb-5">
-    <img src="../public/img/AlaskaBl.jpg" class="img-fluid col-md-12 shadow-sm p-0 mb-5 rounded" alt="Image">
+    <img src="/img/AlaskaBl.jpg" class="img-fluid col-md-12 shadow-sm p-0 mb-5 rounded" alt="Image">
 </div>
 -->

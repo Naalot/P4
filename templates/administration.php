@@ -9,7 +9,7 @@
 <?= $this->session->show('delete_comment'); ?>
 <?= $this->session->show('delete_user'); ?>
 
-<a class="btn btn-success mb-2" href="../public/index.php?route=addArticle">Nouvel article</a>
+<a class="btn btn-success mb-2" href="/index.php?route=addArticle">Nouvel article</a>
 
 <h2>Articles</h2>
 
@@ -30,13 +30,13 @@
         ?>
             <tr>
                 <td><?= htmlspecialchars($article->getId()); ?></td>
-                <td><a href="../public/index.php?route=article&articleId=<?= htmlspecialchars($article->getId()); ?>"><?= htmlspecialchars($article->getTitle()); ?></a></td>
+                <td><a href="/index.php?route=article&articleId=<?= htmlspecialchars($article->getId()); ?>"><?= htmlspecialchars($article->getTitle()); ?></a></td>
                 <td><?= substr($article->getContent(), 0, 150); ?></td>
                 <td><?= htmlspecialchars($article->getAuthor()); ?></td>
                 <td>Créé le : <?= htmlspecialchars($article->getCreatedAt()); ?></td>
                 <td>
-                    <a class="btn btn-warning" href="../public/index.php?route=editArticle&articleId=<?= $article->getId(); ?>">Modifier</a>
-                    <a class="btn btn-danger" href="../public/index.php?route=deleteArticle&articleId=<?= $article->getId(); ?>">Supprimer</a>
+                    <a class="btn btn-warning" href="/index.php?route=editArticle&articleId=<?= $article->getId(); ?>">Modifier</a>
+                    <a class="btn btn-danger" href="/index.php?route=deleteArticle&articleId=<?= $article->getId(); ?>">Supprimer</a>
                 </td>
             </tr>
         <?php
@@ -67,8 +67,8 @@
                 <td><?= substr(htmlspecialchars($comment->getContent()), 0, 150); ?></td>
                 <td>Créé le : <?= htmlspecialchars($comment->getCreatedAt()); ?></td>
                 <td>
-                    <a class="btn btn-secondary" href="../public/index.php?route=unflagComment&commentId=<?= $comment->getId(); ?>">Désignaler le commentaire</a>
-                    <a class="btn btn-danger" href="../public/index.php?route=deleteComment&commentId=<?= $comment->getId(); ?>">Supprimer le commentaire</a>
+                    <a class="btn btn-secondary" href="/index.php?route=unflagComment&commentId=<?= $comment->getId(); ?>">Désignaler le commentaire</a>
+                    <a class="btn btn-danger" href="/index.php?route=deleteComment&commentId=<?= $comment->getId(); ?>">Supprimer le commentaire</a>
                 </td>
             </tr>
         <?php
@@ -102,7 +102,7 @@
                     <?php
                     if ($user->getRole() != 'admin') {
                     ?>
-                        <a class="btn btn-danger" href="../public/index.php?route=deleteUser&userId=<?= $user->getId(); ?>">Supprimer</a>
+                        <a class="btn btn-danger" href="/index.php?route=deleteUser&userId=<?= $user->getId(); ?>">Supprimer</a>
                     <?php } else {
                     ?>
                         Suppression impossible

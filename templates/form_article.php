@@ -3,7 +3,7 @@ $route = isset($post) && $post->get('id') ? 'editArticle&articleId=' . $post->ge
 $submit = $route === 'addArticle' ? 'Envoyer' : 'Mettre à jour';
 ?>
 
-<form method="post" action="../public/index.php?route=<?= $route; ?>">
+<form method="post" action="/index.php?route=<?= $route; ?>">
     <label for="title">Titre</label><br>
     <input type="text" id="title" name="title" value="<?= isset($post) ? htmlspecialchars($post->get('title')) : ''; ?>"><br>
     <?= isset($errors['title']) ? $errors['title'] : ''; ?>
@@ -17,7 +17,7 @@ $submit = $route === 'addArticle' ? 'Envoyer' : 'Mettre à jour';
     tinymce.init({
         selector: '#content',
         language: 'fr_FR',
-        language_url: '../public/js/tinymce/langs/fr_FR.js',
+        language_url: '/js/tinymce/langs/fr_FR.js',
         plugins: 'autolink lists media table link preview',
         toolbar: 'undo redo styleselect bold italic alignleft aligncenter alignright alignjustify | bullist numlist outdent indent link media',
         toolbar_mode: 'floating',
@@ -32,7 +32,7 @@ $submit = $route === 'addArticle' ? 'Envoyer' : 'Mettre à jour';
     tinymce.init({
         selector: '#content',
         language: 'fr_FR',
-        language_url: '../public/js/tinymce/langs/fr_FR.js',
+        language_url: '/js/tinymce/langs/fr_FR.js',
         plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
         toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
         toolbar_mode: 'floating',

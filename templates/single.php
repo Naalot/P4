@@ -10,8 +10,8 @@
         </div>
         <br>
         <div class="actions">
-            <a class="btn btn-warning" href="../public/index.php?route=editArticle&articleId=<?= $article->getId(); ?>">Modifier</a>
-            <a class="btn btn-danger" href="../public/index.php?route=deleteArticle&articleId=<?= $article->getId(); ?>">Supprimer</a>
+            <a class="btn btn-warning" href="/index.php?route=editArticle&articleId=<?= $article->getId(); ?>">Modifier</a>
+            <a class="btn btn-danger" href="/index.php?route=deleteArticle&articleId=<?= $article->getId(); ?>">Supprimer</a>
         </div>
     </div>
 
@@ -32,11 +32,11 @@
             <?php
             } else {
             ?>
-                <p><a href="../public/index.php?route=flagComment&commentId=<?= $comment->getId(); ?>">Signaler le commentaire</a></p>
+                <p><a href="/index.php?route=flagComment&commentId=<?= $comment->getId(); ?>">Signaler le commentaire</a></p>
             <?php
             }
             ?>
-            <p><a href="../public/index.php?route=deleteComment&commentId=<?= $comment->getId(); ?>">Supprimer le commentaire</a></p>
+            <p><a href="/index.php?route=deleteComment&commentId=<?= $comment->getId(); ?>">Supprimer le commentaire</a></p>
             <br>
         <?php
         }

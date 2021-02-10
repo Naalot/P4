@@ -8,7 +8,7 @@ h2, h2 a {
 
 #headert {
     color: darkslategray;
-    background-image: url("../img/AlaskaBl.jpg");
+    background-image: url("/img/AlaskaBl.jpg");
     background-size: cover;
     height: 400px;
     padding: 20px;

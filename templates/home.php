@@ -17,7 +17,7 @@
     ?>
 
 <div class="container text-center shadow-sm p-0 mb-5 bg-white rounded">
-    <h2 class="bg-light"><a href="../public/index.php?route=article&articleId=<?= htmlspecialchars($article->getId()); ?>"><?= htmlspecialchars($article->getTitle()); ?></a></h2>
+    <h2 class="bg-light"><a href="/index.php?route=article&articleId=<?= htmlspecialchars($article->getId()); ?>"><?= htmlspecialchars($article->getTitle()); ?></a></h2>
     <p><?= $article->getContent(); ?></p>
     <p><?= htmlspecialchars($article->getAuthor()); ?></p>
     <p>Créé le : <?= htmlspecialchars($article->getCreatedAt()); ?></p>
