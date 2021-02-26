@@ -14,6 +14,16 @@ class FrontController extends Controller
         ]);
     }
 
+    /* Ajout fonction blog */
+
+    public function blog()
+    {
+        $articles = $this->articleDAO->getArticles();
+        return $this->view->render('blog', [
+           'articles' => $articles
+        ]);
+    }
+
     public function article($articleId)
     {
         $article = $this->articleDAO->getArticle($articleId);

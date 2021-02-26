@@ -12,17 +12,8 @@
 <?= $this->session->show('logout'); ?>
 <?= $this->session->show('delete_account'); ?>
 
-    <?php
-    foreach ($articles as $article) {
-    ?>
 
 <div class="container text-center shadow-sm p-0 mb-5 bg-white rounded">
-    <h2 class="bg-light"><a href="/index.php?route=article&articleId=<?= htmlspecialchars($article->getId()); ?>"><?= htmlspecialchars($article->getTitle()); ?></a></h2>
-    <p><?= $article->getContent(); ?></p>
-    <p><?= htmlspecialchars($article->getAuthor()); ?></p>
-    <p>Créé le : <?= htmlspecialchars($article->getCreatedAt()); ?></p>
-</div>
-
-<?php
-    }
-?>
+    <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex animi quam eius cupiditate, dignissimos tempore ut quisquam doloremque, ipsum laborum nobis dolorum distinctio, sapiente quos voluptatem harum modi omnis cum!
+    </h1>

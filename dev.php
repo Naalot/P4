@@ -1,6 +1,6 @@
 <?php
 
-//Nos constantes
+//Constantes
 
 const HOST = 'db5001587259.hosting-data.io';
 const DB_NAME = 'dbs1321992';

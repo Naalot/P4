@@ -75,6 +75,10 @@ class Router
                 elseif($route === 'administration'){
                     $this->backController->administration();
                 }
+                /* Ajout page Blog */
+                elseif($route === 'blog'){
+                    $this->frontController->blog();
+                }
                 else{
                     $this->errorController->errorNotFound();
                 }
