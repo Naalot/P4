@@ -1,8 +1,13 @@
 * {
     font-family: sans-serif;
+    color: dimgray;
 }
 
-h2, h2 a {
+body {
+    background-color: #f8f9fa05 !important;
+}
+
+h1, header p, h2, h2 a {
     color: darkslategray;
 }
 
@@ -14,7 +19,7 @@ h2, h2 a {
     padding: 20px;
 }
 
-#logo img{
+#logo img {
     height: 50px;
 }
 

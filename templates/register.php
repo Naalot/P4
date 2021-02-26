@@ -1,6 +1,8 @@
 <?php $this->title = "Inscription"; ?>
 
 <div class="container shadow-sm p-3 mb-5 rounded">
+    <h2 class="bg-light rounded">Créer un compte</h2>
+
     <form method="post" action="/index.php?route=register">
         <label for="pseudo">Pseudo</label><br>
         <input type="text" id="pseudo" name="pseudo" value="<?= isset($post) ? htmlspecialchars($post->get('pseudo')): ''; ?>"><br>

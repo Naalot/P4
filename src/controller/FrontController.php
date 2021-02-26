@@ -15,7 +15,6 @@ class FrontController extends Controller
     }
 
     /* Ajout fonction blog */
-
     public function blog()
     {
         $articles = $this->articleDAO->getArticles();
@@ -41,7 +40,7 @@ class FrontController extends Controller
             if(!$errors) {
                 $this->commentDAO->addComment($post, $articleId);
                 $this->session->set('add_comment', 'Le nouveau commentaire a bien été ajouté');
-                header('Location: /index.php');
+                header('Location: /index.php?route=blog');
             }
             $article = $this->articleDAO->getArticle($articleId);
             $comments = $this->commentDAO->getCommentsFromArticle($articleId);
@@ -58,7 +57,7 @@ class FrontController extends Controller
     {
         $this->commentDAO->flagComment($commentId);
         $this->session->set('flag_comment', 'Le commentaire a bien été signalé');
-        header('Location: /index.php');
+        header('Location: /index.php?route=blog');
     }
 
     public function register(Parameter $post)
@@ -71,7 +70,7 @@ class FrontController extends Controller
             if(!$errors) {
                 $this->userDAO->register($post);
                 $this->session->set('register', 'Votre inscription a bien été effectuée');
-                header('Location: /index.php');
+                header('Location: /index.php?route=login');
             }
             return $this->view->render('register', [
                 'post' => $post,
