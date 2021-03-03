@@ -14,6 +14,8 @@
 
     <script src="https://cdn.tiny.cloud/1/mbkz2iix5nw6qqgj6bujfzj8etreltwnck4cldq3f09k5ib5/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
+    <link rel="icon" type="image/png" href="/img/LogoAACF.jpg"/>
+
     <title><?= $title ?></title>
 </head>
 

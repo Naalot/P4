@@ -70,7 +70,14 @@ class FrontController extends Controller
             if(!$errors) {
                 $this->userDAO->register($post);
                 $this->session->set('register', 'Votre inscription a bien été effectuée');
-                header('Location: /index.php?route=login');
+
+                $result = $this->userDAO->login($post);
+                $this->session->set('login', 'Content de vous revoir');
+                $this->session->set('id', $result['result']['id']);
+                $this->session->set('role', $result['result']['name']);
+                $this->session->set('pseudo', $post->get('pseudo'));
+
+                header('Location: /index.php');
             }
             return $this->view->render('register', [
                 'post' => $post,

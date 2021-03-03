@@ -49,7 +49,7 @@
     </div>
 
     <div>
-        <a class="btn btn-primary ml-5 mb-5" href="/index.php?route=blog">Retour au blog</a>
+        <a class="btn btn-primary ml-5 mb-5" href="/index.php?route=blog">Retour aux articles</a>
     </div>
 
 </div>
