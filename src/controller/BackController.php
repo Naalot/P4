@@ -139,7 +139,7 @@ class BackController extends Controller
     {
         if($this->checkLoggedIn())
         {
-            $this->logoutOrDelete('logout');    
+            $this->logoutOrDelete('logout');
         }
     }
 
@@ -170,6 +170,6 @@ class BackController extends Controller
         } else {
             $this->session->set($param, 'Votre compte a bien été supprimé');
         }
-        header('Location: /index.php');
+        /* header('Location: /index.php'); */
     }
 }

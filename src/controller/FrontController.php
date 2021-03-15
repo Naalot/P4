@@ -69,10 +69,10 @@ class FrontController extends Controller
             }
             if(!$errors) {
                 $this->userDAO->register($post);
-                $this->session->set('register', 'Votre inscription a bien été effectuée');
+                $this->session->set('register', 'Votre inscription a bien été effectuée. ');
 
                 $result = $this->userDAO->login($post);
-                $this->session->set('login', 'Content de vous revoir');
+                $this->session->set('login', 'Bienvenue !');
                 $this->session->set('id', $result['result']['id']);
                 $this->session->set('role', $result['result']['name']);
                 $this->session->set('pseudo', $post->get('pseudo'));
@@ -93,7 +93,7 @@ class FrontController extends Controller
         if($post->get('submit')) {
             $result = $this->userDAO->login($post);
             if($result && $result['isPasswordValid']) {
-                $this->session->set('login', 'Content de vous revoir');
+                $this->session->set('login', ' Content de vous revoir');
                 $this->session->set('id', $result['result']['id']);
                 $this->session->set('role', $result['result']['name']);
                 $this->session->set('pseudo', $post->get('pseudo'));
