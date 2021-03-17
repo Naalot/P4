@@ -2,7 +2,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm p-2 mb-5">
         <div class="container-fluid">
-            <a id="logo" class="navbar-brand" href="/index.php"><img class="img-fluid" src="/img/LogoAACF.jpg"></a>
+            <a id="logo" class="navbar-brand" href="/index.php"><img class="img-fluid" src="/img/LogoAACF.jpg" alt="Alaska Arts & Culture Foundation"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
