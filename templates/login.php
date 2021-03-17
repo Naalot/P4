@@ -1,6 +1,5 @@
 <?php $this->title = "Connexion"; ?>
 
-<?= $this->session->show('error_login'); ?>
 <div class="container shadow-sm p-3 mb-5 rounded">
     <h2 class="bg-light rounded">Connexion à votre compte</h2>
 

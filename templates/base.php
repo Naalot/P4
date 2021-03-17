@@ -22,8 +22,9 @@
 <body>
     
     <?php include ("navbar.php"); ?>
-    <?php include ("alert_function.php"); ?>
     <?php include ("header.php"); ?>
+    
+    <?php include ("alert_function.php"); ?>
 
     <main class="container-fluid">
         <?= $content ?>

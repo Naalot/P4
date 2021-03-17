@@ -2,13 +2,6 @@
 
 <div class="container">
 
-    <?= $this->session->show('add_article'); ?>
-    <?= $this->session->show('edit_article'); ?>
-    <?= $this->session->show('delete_article'); ?>
-    <?= $this->session->show('unflag_comment'); ?>
-    <?= $this->session->show('delete_comment'); ?>
-    <?= $this->session->show('delete_user'); ?>
-
     <a class="btn btn-success mb-2" href="/index.php?route=addArticle">Nouvel article</a>
 
     <h2>Articles</h2>

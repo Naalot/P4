@@ -15,4 +15,7 @@ $submit = $route === 'addComment' ? 'Ajouter' : 'Mettre à jour';
 
 <!-- Pré-remplissage pseudo 
 <?= $this->session->get('pseudo'); ?>
+
+
+
 -->
