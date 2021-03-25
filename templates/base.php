@@ -10,8 +10,9 @@
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
+    <!-- Tiny MCE -->
     <script src="https://cdn.tiny.cloud/1/mbkz2iix5nw6qqgj6bujfzj8etreltwnck4cldq3f09k5ib5/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
     <link rel="icon" type="image/png" href="/img/LogoAACF.jpg" />
