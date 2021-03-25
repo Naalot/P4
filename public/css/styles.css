@@ -19,6 +19,17 @@ h1, header p, h2, h2 a {
     padding: 20px;
 }
 
+#cover {
+   max-width: 20em;
+   margin: 0.5em;
+}
+
+#descrpt {
+   margin: 0.5em;
+   font-size: 1.5rem;
+   vertical-align: middle;
+}
+
 #logo img {
     height: 50px;
 }

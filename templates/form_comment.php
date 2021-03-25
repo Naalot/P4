@@ -12,10 +12,3 @@ $submit = $route === 'addComment' ? 'Ajouter' : 'Mettre à jour';
     <?= isset($errors['content']) ? $errors['content'] : ''; ?>
     <input type="submit" value="<?= $submit; ?>" id="submit" name="submit">
 </form>
-
-<!-- Pré-remplissage pseudo 
-<?= $this->session->get('pseudo'); ?>
-
-
-
--->
