@@ -13,7 +13,7 @@
 
     <div class="container text-sm-right p-1">
 
-        <a href="p4.lbureau-portfolio.com">© Laurent BUREAU</a>
+        <a href="https://p4.lbureau-portfolio.com/">© Laurent BUREAU</a>
         <span> | </span>
         <?php echo date("Y"); ?>
     </div>

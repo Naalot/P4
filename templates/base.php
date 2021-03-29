@@ -29,7 +29,7 @@
     <title><?= $title ?></title>
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Billet simple pour l'Alaska - Par Jean Forteroche">
+    <meta property="og:title" content="Billet simple pour l'Alaska | Par Jean Forteroche">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://p4.lbureau-portfolio.com/">
     <meta property="og:image" content="https://p4.lbureau-portfolio.com/img/Un_billet_simple_cover.jpg">
