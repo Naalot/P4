@@ -9,8 +9,8 @@ function displayMessage($message, $color)
 } ?>
 
 <?= displayMessage($this->session->show('add_article'), 'success'); ?>
-<?= displayMessage($this->session->show('addComment'), 'success'); ?>
-<?= displayMessage($this->session->show('flagComment'), 'success'); ?>
+<?= displayMessage($this->session->show('add_comment'), 'success'); ?>
+<?= displayMessage($this->session->show('flag_comment'), 'success'); ?>
 <?= displayMessage($this->session->show('login'), 'success'); ?>
 <?= displayMessage($this->session->show('logout'), 'success'); ?>
 <?= displayMessage($this->session->show('register'), 'success'); ?>
