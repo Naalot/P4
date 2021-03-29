@@ -38,3 +38,9 @@ h1, header p, h2, h2 a {
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
     margin-bottom: 0.25em;
 }
+
+#blogBtn {
+    color: darkslategray;
+    font-size: 1.25em;
+    background-color: #D7E5EA;
+}

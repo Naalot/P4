@@ -20,6 +20,9 @@
         <p class="center">
             -- JF --
         </p>
+        <div class="container">
+            <a id="blogBtn" class="btn border shadow-sm mb-2" href="index.php?route=blog">Visiter le blog</a>
+        </div>
 
     </div>
 </div>

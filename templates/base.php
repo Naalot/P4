@@ -31,7 +31,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Billet simple pour l'Alaska - Par Jean Forteroche">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.p4.lbureau-portfolio.com/">
+    <meta property="og:url" content="https://p4.lbureau-portfolio.com/">
     <meta property="og:image" content="https://p4.lbureau-portfolio.com/img/Un_billet_simple_cover.jpg">
     <meta property="og:description" content="Le blog de Jean Forteroche sur son roman 'Un billet simple pour l'Alaska'">
 
