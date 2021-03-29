@@ -12,7 +12,7 @@
             Ici vous trouverez les dernières actualités du roman, des extraits, ainsi que du contenu en rapport avec la trame narrative.
         </p>
         <p>
-            Ce format blog est pour moi l'occasion de rendre l'exprérience plus interactive. Je peux ainsi partager avec vous mon nouveau roman d'aventure, mon processus d'écriture, mes inspirations 'etc' ...
+            Ce format blog est pour moi l'occasion de rendre l'expérience plus interactive. Je peux ainsi partager avec vous mon nouveau roman d'aventure, mon processus d'écriture, mes inspirations 'etc' ...
         </p>
         <p>
             N'hésitez pas à poster des commentaires sur mon travail. Je vous souhaite une belle lecture !
