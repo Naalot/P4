@@ -23,5 +23,10 @@ $submit = $route === 'addArticle' ? 'Envoyer' : 'Mettre à jour';
         toolbar_mode: 'floating',
         tinycomments_mode: 'embedded',
         tinycomments_author: 'Author name',
+        image_dimensions: false,
+        image_class_list: [{
+            title: 'Responsive',
+            value: 'img-fluid'
+        }]
     });
 </script>
