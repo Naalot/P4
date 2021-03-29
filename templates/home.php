@@ -43,7 +43,7 @@
 <div class="container shadow-sm mb-5 bg-light rounded">
     <div class="row">
 
-        <p id="descrpt" class="container text-center col-md-8">
+        <p id="bio" class="container text-center col-md-8">
             Jean Forteroche est un écrivain, photographe, iconographe et voyageur français. <br class="mb-2">
 
             Elevé par son père bibliothécaire, Jean est dès l'âge de 6 ans un grand lecteur de Jules Verne, de Stevenson, de Jack London et d'Henry Michaux. Après ses deux licences à l'université de Genève, en droit et en lettres, il part pour son premier voyage au long cours en Alaska, qui durera... quatre années. <br class="mb-2">
@@ -53,7 +53,7 @@
             Mais grâce à ses nombreuses aventures, il comble son plus grand désir : aller à la rencontre de l'autre.
         </p>
 
-        <img id="cover" class="container mx-auto col-md-4 img-thumbnail" src="/img/JF.jpg" alt="Jean Forteroche en Alaska">
+        <img id="coverImg" class="container mx-auto col-md-4 img-thumbnail" src="/img/JF.jpg" alt="Jean Forteroche en Alaska">
 
     </div>
 </div>

@@ -19,12 +19,12 @@ h1, header p, h2, h2 a {
     padding: 20px;
 }
 
-#cover {
+#cover, #coverImg {
    max-width: 20em;
    margin: 0.5em;
 }
 
-#descrpt {
+#descrpt, #bio {
    margin: 0.5em;
    font-size: 1.5rem;
    vertical-align: middle;
