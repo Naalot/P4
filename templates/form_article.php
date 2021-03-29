@@ -18,7 +18,7 @@ $submit = $route === 'addArticle' ? 'Envoyer' : 'Mettre à jour';
         selector: '#content',
         language: 'fr_FR',
         language_url: '/js/tinymce/langs/fr_FR.js',
-        plugins: 'autolink lists media table link preview',
+        plugins: 'autolink lists media image table link preview',
         toolbar: 'undo redo styleselect bold italic alignleft aligncenter alignright alignjustify | bullist numlist outdent indent link media',
         toolbar_mode: 'floating',
         tinycomments_mode: 'embedded',

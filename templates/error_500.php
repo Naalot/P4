@@ -1,6 +1,6 @@
 <!--  'problème serveur' -->
 <h1 class="center">
-    Error 500 - Internal Server Error
+    Error 500 - Internal Server Error :(
 </h1>
 
 <p class="center mt-2">

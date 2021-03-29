@@ -1,6 +1,6 @@
 <!-- 'page non trouvée'-->
 <h1 class="center">
-    Error 404 - Not found
+    Error 404 - Not found :(
 </h1>
 
 <p class="center mt-2">
